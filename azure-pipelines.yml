@@ -7,7 +7,7 @@ pool:
 steps:
 - task: RunARMTTKTests@1
   inputs:
-    templatelocation: '$(System.DefaultWorkingDirectory)'
+    templatelocation: '$(System.DefaultWorkingDirectory)\templates'
     resultLocation: '$(System.DefaultWorkingDirectory)\results'
     includeTests: 'VM Images Should Use Latest Version,Resources Should Have Location'
     skipTests: 'VM Images Should Use Latest Version,Resources Should Have Location'
